@@ -7,109 +7,123 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">About me</a>
-            <a href="">Skills</a>
-            <a href="">Portfolio</a>
-            <a href="">Contacts</a>
-        </nav>
+    <header class="header">
+        <div class="content-container">
+            <nav class="header__wrapper">
+                <a class="header__link is-animated is-active" href="">Home</a>
+                <a class="header__link is-animated" href="">About me</a>
+                <a class="header__link is-animated" href="">Skills</a>
+                <a class="header__link is-animated" href="">Portfolio</a>
+                <a class="header__link is-animated" href="">Contacts</a>
+            </nav>
+        </div>
     </header>
     <main>
-       <section>
-           <div>
-               <h1>Denis<br>Novik</h1>
-               <p>UX | UI designer <br>24 years old, Minsk</p>
-               <div>
-                   <a href="">RU</a> | <span>EN</span>
-               </div>
-           </div>
-           <img src="src/img/header.jpg" alt="Denis Novik UX | UI designer 24 years old, Minsk">
-       </section>
-       <section>
-            <h2>About me</h2>
-            <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
-            <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-            <p>Ready to implement excellent projects with wonderful people.</p>
-       </section>
-       <section>
-            <h2>Skills</h2>
-            <p>I work in such programs as</p>
-            <div>
-                <div>
-                    <img src="src/img/ps.jpg" alt="Photoshop logo">
-                    <p>Adobe Photoshop</p>
-                    <div>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
+        <section class="section__main">
+            <div class="content-container">
+                <div class="section__main-wrapper">
+                    <h1 class="section__main-title">Denis <br/>Novik</h1>
+                    <p class="section__main-text">UX | UI designer <br/>24 years old, Minsk</p>
+                    <div class="section__main-lang">
+                        <a href="" class="is-animated">RU</a> | <span>ENG</span>
                     </div>
                 </div>
-                <div>
-                    <img src="src/img/ai.jpg" alt="Adobe Illustrator logo">
-                    <p>Adobe Illustrator</p>
-                    <div>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                    </div>
+                <img src="src/img/header.jpg" alt="Denis Novik UX | UI designer from Minsk" />
+            </div>
+        </section>
+        <section class="section__about is-grey">
+            <div class="content-container">
+                <h2>About me</h2>
+                <div class="section__about-text">
+                    <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+                    <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                    <p>Ready to implement excellent projects with wonderful people.</p>
                 </div>
-                <div>
-                    <img src="src/img/ae.jpg" alt="Adobe After Effects logo">
-                    <p>Adobe After Effects</p>
-                    <div>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
+            </div>
+        </section>
+        <section class="section__skills">
+            <div class="content-container">
+                <h2>Skills</h2>
+                <p>I work in such programs as</p>
+                <div class="section__skills-wrapper">
+                    <div class="section__skills-item">
+                        <img class="section__skills-item-img" src="src/img/ps.jpg" alt="Adobe Photoshop logo" />
+                        <p class="section__skills-item-title">Adobe <br/>Photoshop</p>
+                        <div class="section__skills-item-stars">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star is-grey"></span>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src="src/img/figma.jpg" alt="Figma logo">
-                    <p>Figma</p>
-                    <div>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
+                    <div class="section__skills-item">
+                        <img class="section__skills-item-img" src="src/img/ai.jpg" alt="Adobe Illustrator logo" />
+                        <p class="section__skills-item-title">Adobe <br/>Illustrator</p>
+                        <div class="section__skills-item-stars">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star is-grey"></span>
+                            <span class="icon-star is-grey"></span>
+                        </div>
+                    </div>
+                    <div class="section__skills-item">
+                        <img class="section__skills-item-img" src="src/img/ae.jpg" alt="Adobe After Effects logo" />
+                        <p class="section__skills-item-title">Adobe <br/>After Effects</p>
+                        <div class="section__skills-item-stars">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star is-grey"></span>
+                        </div>
+                    </div>
+                    <div class="section__skills-item">
+                        <img class="section__skills-item-img" src="src/img/figma.jpg" alt="Figma logo" />
+                        <p class="section__skills-item-title">Figma</p>
+                        <div class="section__skills-item-stars">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star is-grey"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-       </section>
-       <section>
-        <h2>Portfolio</h2>
-        <div>
-            <img src="src/img/portfolio-1.jpg" alt="Portfolio image">
-            <a href="" target="_blank" rel="nofollow">Online fashion store - Homepage</a>
-        </div>
-        <div>
-            <img src="src/img/portfolio-2.jpg" alt="Portfolio image">
-            <a href="" target="_blank" rel="nofollow">Reebok Store - Concept</a>
-        </div>
-        <div>
-            <img src="src/img/portfolio-3.jpg" alt="Portfolio image">
-            <a href="" target="_blank" rel="nofollow">Braun Landing Page - Concept</a>
-        </div>
-       </section>
+        </section>
+        <section class="is-grey section__portfolio">
+            <div class="content-container">
+                <h2>Portfolio</h2>
+                <div class="section__portfolio-item">
+                    <img src="src/img/portfolio-1.jpg" alt="Online fashion store - Homepage" />
+                    <a class="section__portfolio-item-link" href="" target="_blank" rel="nofollow">Online fashion store - Homepage</a>
+                </div>
+                <div class="section__portfolio-item">
+                    <img src="src/img/portfolio-2.jpg" alt="Reebok Store - Concept" />
+                    <a class="section__portfolio-item-link" href="" target="_blank" rel="nofollow">Reebok Store - Concept</a>
+                </div>
+                <div class="section__portfolio-item">
+                    <img src="src/img/portfolio-3.jpg" alt="Braun Landing Page - Concept" />
+                    <a class="section__portfolio-item-link" href="" target="_blank" rel="nofollow">Braun Landing Page - Concept</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <h2>Contacts</h2>
-        <p>Want to know more or just chat? You are welcome!</p>
-        <button>Send message</button>
-        <div>
-            <a href="" target="_blank" rel="nofollow" class="icon-linkedin"></a>
-            <a href="" target="_blank" rel="nofollow" class="icon-instagram"></a>
-            <a href="" target="_blank" rel="nofollow" class="icon-behance"></a>
-            <a href="" target="_blank" rel="nofollow" class="icon-dribble"></a>
+    <footer class="footer">
+        <div class="content-container">
+            <h2 class="footer__title">Contacts</h2>
+            <p>Want to know more or just chat? <br/>You are welcome!</p>
+            <button class="footer__button is-animated">Send message</button>
+            <div class="footer__socials">
+                <a href="" target="_blank" rel="nofollow" class="icon-linkedin footer__socials-link is-animated"></a>
+                <a href="" target="_blank" rel="nofollow" class="icon-instagram footer__socials-link is-animated"></a>
+                <a href="" target="_blank" rel="nofollow" class="icon-behance footer__socials-link is-animated"></a>
+                <a href="" target="_blank" rel="nofollow" class="icon-dribble footer__socials-link is-animated"></a>
+            </div>
+            <p class="footer__copy">Like me on <br/>LinkedIn, Instagram, Behance, Dribble</p>
         </div>
-        <p>Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
     </footer>
 </body>
 </html>
