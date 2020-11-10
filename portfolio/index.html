@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="content-container">
+        <div class="content-container is-desktop">
             <nav class="header__wrapper">
                 <a class="header__link is-animated is-active" href="">Home</a>
                 <a class="header__link is-animated" href="">About me</a>
@@ -24,11 +24,28 @@
                 <div class="section__main-wrapper">
                     <h1 class="section__main-title">Denis <br/>Novik</h1>
                     <p class="section__main-text">UX | UI designer <br/>24 years old, Minsk</p>
-                    <div class="section__main-lang">
+                    <div class="section__main-lang is-desktop">
                         <a href="" class="is-animated">RU</a> | <span>ENG</span>
                     </div>
+                    <div class="menu__button icon-menu is-mobile"></div>
                 </div>
-                <img src="src/img/header.jpg" alt="Denis Novik UX | UI designer from Minsk" />
+                <img class="is-desktop" src="src/img/header.jpg" alt="Denis Novik UX | UI designer from Minsk" />
+                <img class="is-mobile" src="src/img/header-xs.jpg" alt="Denis Novik UX | UI designer from Minsk" />
+                <div class="menu__mobile is-mobile is-animated">
+                    <div class="menu__mobile-wrapper">
+                        <a class="menu__mobile-link is-animated is-active" href="">Home</a>
+                        <a class="menu__mobile-link is-animated" href="">About me</a>
+                        <a class="menu__mobile-link is-animated" href="">Skills</a>
+                        <a class="menu__mobile-link is-animated" href="">Portfolio</a>
+                        <a class="menu__mobile-link is-animated" href="">Contacts</a>
+                        <div class="menu__mobile-close icon-close"></div>
+                        <div class="menu__mobile-lang">
+                            <a href="" class="is-animated">RU</a> | <span>ENG</span>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
             </div>
         </section>
         <section class="section__about is-grey">
@@ -125,5 +142,18 @@
             <p class="footer__copy">Like me on <br/>LinkedIn, Instagram, Behance, Dribble</p>
         </div>
     </footer>
+    <div class="modal__form is-animated">
+        <div class="modal__form-wrapper is-animated">
+            <form action="#">
+                <input type="text" placeholder="Your name *" required>
+                <input type="email" placeholder="Your email *" required>
+                <input type="text" placeholder="Company">
+                <textarea required></textarea>
+                <button class="modal__form-send">Send</button>
+            </form>
+            <div class="modal__form-close icon-close"></div>
+        </div>
+    </div>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
