@@ -1,0 +1,25 @@
+/* header */
+.header{
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 0;
+        border-bottom: 1px solid $grey; 
+    }
+
+    &__link {
+        color: $grey;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover, &.is-active {
+            color: $black;
+        }
+    }
+}

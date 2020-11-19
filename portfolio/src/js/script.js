@@ -1,32 +1,13 @@
-function pageLoaded(){
-    const menuBtn = document.querySelector(".menu__button");
-    const closeMenuBtn = document.querySelector(".menu__mobile-close");
-    const menu = document.querySelector(".menu__mobile");
-    const footerBtn = document.querySelector(".footer__button");
-    const footerClose = document.querySelector(".modal__form-close");
-    const form  =document.querySelector(".modal__form");
+import '../scss/style.scss'
 
-    menuBtn.addEventListener("click", menuOpen);
-    closeMenuBtn.addEventListener("click", menuClose);
+import {initMenu} from './menu';
+import {initForm} from './form';
+import {initScroll} from './scroll';
 
-    function menuOpen (){
-        menu.classList.add("is-active");
-    }
-    function menuClose (){
-        menu.classList.remove("is-active");
-    }
-
-    footerBtn.addEventListener("click", openForm);
-    footerClose.addEventListener("click", closeForm);
-
-    function openForm (){
-        form.classList.add("is-active");
-    }
-    function closeForm (){
-        form.classList.remove("is-active");
-    }
-
+function pageLoaded() {
+    initMenu();
+    initForm();
+    initScroll();
 }
-
 
 document.addEventListener("DOMContentLoaded", pageLoaded);

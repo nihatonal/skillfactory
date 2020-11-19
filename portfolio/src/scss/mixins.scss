@@ -1,0 +1,15 @@
+/*mixin*/
+
+/* tablet*/
+@mixin md {
+    @media (min-width: 768px){
+      @content;
+    }
+  }
+  
+  /* desktop*/
+  @mixin xl {
+    @media (min-width: 1200px){
+      @content;
+    }
+  }

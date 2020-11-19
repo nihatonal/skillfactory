@@ -10,16 +10,16 @@
     <header class="header">
         <div class="content-container is-desktop">
             <nav class="header__wrapper">
-                <a class="header__link is-animated is-active" href="">Home</a>
-                <a class="header__link is-animated" href="">About me</a>
-                <a class="header__link is-animated" href="">Skills</a>
-                <a class="header__link is-animated" href="">Portfolio</a>
-                <a class="header__link is-animated" href="">Contacts</a>
+            <div class="header__link is-animated is-active" data-target="main">Home</div>
+					<div class="header__link is-animated" data-target="about">About me</div>
+					<div class="header__link is-animated" data-target="skills">Skills</div>
+					<div class="header__link is-animated" data-target="portfolio">Portfolio</div>
+					<div class="header__link is-animated" data-target="contacts">Contacts</div>
             </nav>
         </div>
     </header>
     <main>
-        <section class="section__main">
+        <section class="section__main" id="section-main">
             <div class="content-container">
                 <div class="section__main-wrapper">
                     <h1 class="section__main-title">Denis <br/>Novik</h1>
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <section class="section__about is-grey">
+        <section class="section__about is-grey" id="section-about">
             <div class="content-container">
                 <h2>About me</h2>
                 <div class="section__about-text">
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </section>
-        <section class="section__skills">
+        <section class="section__skills" id="section-skills">
             <div class="content-container">
                 <h2>Skills</h2>
                 <p>I work in such programs as</p>
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="is-grey section__portfolio">
+        <section class="is-grey section__portfolio" id="section-portfolio">
             <div class="content-container">
                 <h2>Portfolio</h2>
                 <div class="section__portfolio-item">
@@ -128,7 +128,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="section-contacts">
         <div class="content-container">
             <h2 class="footer__title">Contacts</h2>
             <p>Want to know more or just chat? <br/>You are welcome!</p>
@@ -144,7 +144,7 @@
     </footer>
     <div class="modal__form is-animated">
         <div class="modal__form-wrapper is-animated">
-            <form action="#">
+            <form class="modal__form-form" action="#">
                 <input type="text" placeholder="Your name *" required>
                 <input type="email" placeholder="Your email *" required>
                 <input type="text" placeholder="Company">
@@ -154,6 +154,6 @@
             <div class="modal__form-close icon-close"></div>
         </div>
     </div>
-    <script src="src/js/script.js"></script>
+   <script src="dist/main.js"></script>
 </body>
 </html>
