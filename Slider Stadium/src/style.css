@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: rgb(212, 255, 55);
+    text-shadow: 4px 4px 8px #000000;
+    padding-bottom: 2rem;
+    letter-spacing: .5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.slider {
+    position: relative;
+    margin: 20px 0;
+    box-shadow: 0 0 8px 8px rgb(191, 248, 226);
+   
+}
+.slider__images{
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+.info__container{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    z-index: 1;
+}
+.info__wrapper{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.info__wrapper p {
+    text-shadow: 4px 4px 8px #000000;
+}
+.info__wrapper .name{
+  margin-right: 20px;
+  width: 250px;
+}
+.info__wrapper .capacity{
+  width: 150px;
+}
+.club-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.club-name p{
+  width: 160px;
+}
+
+.club-name img{
+    margin-right: .5rem;
+}
+span{
+    font-weight: bold;
+    color: #ffc671;
+    text-decoration: underline;
+}
+
+.slider__images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+  }
+
+  .slider__images .image.active {
+    opacity: 1;
+  }
+
+  .slider__arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+  
+  .slider__arrow {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider__arrow:hover {
+    opacity: 1;
+  }
+
+  .slider__arrow.left {
+    left: 0;
+  }
+  
+  .slider__arrow.right {
+    right: 0;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    h1{
+      font-size: 24px;
+      letter-spacing: 0.2rem;
+      padding-bottom: 1rem;
+    }
+    .slider__images{
+      width: 350px;
+      height: 170px;
+    }
+    .info__wrapper{
+      font-size: 14px;
+    }
+    .info__wrapper .name{
+      margin-right: 20px;
+      width: 150px;
+      margin-right: 5px;
+    }
+    .info__wrapper .capacity{
+      width: 80px;
+    }
+    .info__wrapper .club-name{
+   
+      width: 110px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
